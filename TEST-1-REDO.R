@@ -77,3 +77,18 @@ z
 # a matrix is a two dimensional vector while array is an extension of a vector to more than two dimension (n-dimension).
 z[4,1]
 y[2,2,2]
+
+load(file="test1_data.Rdata")
+str(d)
+nrow(d)
+ncol(d)
+class(d$transect) # to reveal the data type in 'transect"
+str(d)  # to print the structure of the data frame
+#The five different data types are: chr,int,factor,POSIXct and num
+typeof(d$transect.id)
+d$tow<-as.factor(d$tow)  # to set"tow" as factor
+str(d) # used to confirm the changes
+d$haul<-as.integer(d$haul)  # to set as integer
+str(d) # used to confirm the changes
+d$sw.density<-NULL   # to remove "sw.density"column from the data.
+str(d)
