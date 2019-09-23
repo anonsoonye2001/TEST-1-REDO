@@ -69,3 +69,11 @@ class(z) # checks that the data type is numeric
 w<-c("a","b","c","b","d")
 sf<-factor(w) # w is set as factor with 4 levels 
 sf # confirms that w has 4 levels of factor
+
+y<-array(1:24,dim=c(4,3,2))
+y
+z<-matrix(11:20,nrow=5,ncol=2)
+z
+# a matrix is a two dimensional vector while array is an extension of a vector to more than two dimension (n-dimension).
+z[4,1]
+y[2,2,2]
