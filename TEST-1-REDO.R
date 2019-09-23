@@ -56,3 +56,16 @@ switcheroo.if.then(x="a")
 switcheroo.if.then(x="b")
 switcheroo.if.then(x="c")
 switcheroo.if.then(x)
+
+x<-"cow" # set as character
+x
+typeof(x)
+y<-c(1:5) # set as integer
+y
+typeof(y)
+z<-12
+typeof(z)
+class(z) # checks that the data type is numeric
+w<-c("a","b","c","b","d")
+sf<-factor(w) # w is set as factor with 4 levels 
+sf # confirms that w has 4 levels of factor
